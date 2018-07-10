@@ -1,3 +1,6 @@
+console. log(hello world);
+
+
 /* 1) Ticket Generator
 Write a for-loop that will iterate through 20 numbers (starting at 1 and ending at 20) and console.log the following message:
 "Now serving 1."
