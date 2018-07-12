@@ -1,3 +1,5 @@
+
+console.log("hi")
 /* 1) Ticket Generator
 Write a for-loop that will iterate through 20 numbers (starting at 1 and ending at 20) and console.log the following message:
 "Now serving 1."
@@ -8,6 +10,10 @@ Write a for-loop that will iterate through 20 numbers (starting at 1 and ending 
 .
 "Now serving 20."
 */
+
+for(var i = 1; i<21; i++){
+  console.log("Now serving " + i);
+}
 
 
 /* 2) Pop Charts
@@ -20,6 +26,13 @@ This week's chart buster is: '24K Magic.'
 */
 
 var topFive = ["Closer", "Starboy", "I Feel It Coming", "Let Me Love You", "24K Magic"];
+
+for( var i = 0;  i <topFive.length; i++){
+  console.log("this weeks cht buster is: " + topFive[i]);
+}
+
+
+
 
 
 /* 3) Dead Presidents
@@ -42,11 +55,32 @@ This function will iterate through the person parameter and console.log the foll
 "President person was a great leader."
 */
 
+var presidents = [ 'Washington', 'Adams' ,'Jefferson', 'Madison','Monroe'];
+for(var i = 0; i<presidents.length; i++){
+  console.log("The value at " + i + " is " + presidents[i]);
+}
+
+console. log(presidents.length);
+function leaders(person){
+  for(var i = 0; i<person.length; i++){
+    console.log("President " + person[i] + " was a great leader.");
+  }
+}
+
+leaders(presidents);
+
 
 /* 4) Line Number
 Declare a variable named `stringOfNumbers` and assign its value to an empty string. 
 
 Write a for-loop that concatenates a Number value into that string on each iteration, starting at `10` and continuing up to and including `20`. Console.log your result. It should read "1011121314151617181920"*/
+
+var stringOfNumbers= '';
+
+for(var i = 10; i < 21; i++){
+  stringOfNumbers += i;
+}
+console.log(stringOfNumbers);
 
 
 /* 5) Even Stevens
@@ -56,6 +90,15 @@ Write a for-loop that will push even numbers to the `evenNumArr` array. We want 
 Console.log your results.
 */
 
+var evenNumArr= [];
+
+for(var i = 0; i<100; i++){
+  if(i%2 === 0){
+    evenNumArr.push(i);
+  }
+}
+
+console.log(evenNumArr);
 
 /* 6) Up the Odds
 Declare a variable named `oddSum` and assign it to the Number value 0.
@@ -63,7 +106,16 @@ Declare a variable named `oddSum` and assign it to the Number value 0.
 Write a for-loop that will sum up odd numbers to the `oddSum` variable. We want to add 50 odd numbers starting from 1.
 Console.log your results.
 */
-  
+
+var oddSum =0
+
+for(var i = 1; i <100; i++){
+  if (i%2 === 1){
+    oddSum +=i;
+  }
+}
+
+console. log(oddSum);
 
 /* 7) Oops There It is
 Declare a variable named `oopsArray` and assign its to the following array: `[ 'turn' , , 'down' , , 'for' , , 'what' ]`.
@@ -71,6 +123,24 @@ Note that every odd index value in `oopsArray` is currently `undefined`. Using a
 
 [ 'turn' , 'nope' , 'down' , 'nope' , 'for' , 'nope' , 'what' ]
 */
+
+
+var oopsArray = [ 'turn' , , 'down' , , 'for' , , 'what' ];
+
+
+for(var i = 0; i<oopsArray.length; i++){
+  console.log(oopsArray[i]);
+  if(i%2 ===1){
+    oopsArray[i] = "nope";
+  }
+}
+
+console.log(oopsArray);
+
+
+
+
+
 
 
 /* 8) Is It There Oops
@@ -85,6 +155,16 @@ nope
 turn
 */
 
+var oopsArray = [ 'turn' , , 'down' , , 'for' , , 'what' ];
+
+for(var i = oopsArray.length - 1; i>=0; i--){
+  console.log(oopsArray[i]);
+}
+
+
+
+
+
 
 /* 9) Siesta Time
 Declare a variable named `napSchedule` and assign its value to the following array: `[false, false, true, false, true, true]`
@@ -95,6 +175,12 @@ Next, write a function named `nap`. This function takes in a single parameter: `
 
 Inside of this function write a for-loop that will iterate through the `napSchedule` array and console.log the message: `ZzZzZzZz` if the schedule is `true`, otherwise the it will console.log the message: `Gotta get coding!` if the schedule is `false`.
 */
+
+var napSchedule = [ false, false, true, false,true, true];
+
+function nap(schedule){
+
+}
 
 
 
