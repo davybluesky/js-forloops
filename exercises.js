@@ -1,5 +1,5 @@
 
-
+console.log("hi")
 /* 1) Ticket Generator
 Write a for-loop that will iterate through 20 numbers (starting at 1 and ending at 20) and console.log the following message:
 "Now serving 1."
@@ -30,6 +30,7 @@ var topFive = ["Closer", "Starboy", "I Feel It Coming", "Let Me Love You", "24K 
 for( var i = 0;  i <topFive.length; i++){
   console.log("this weeks cht buster is: " + topFive[i]);
 }
+
 
 
 
