@@ -15,6 +15,7 @@ for(var i = 1; i<21; i++){
   console.log("Now serving " + i);
 }
 
+
 /* 2) Pop Charts
 Write a for-loop that will iterate through the topFive array below and console.log the following message:
 This week's chart buster is: 'Closer.'
@@ -124,6 +125,8 @@ Note that every odd index value in `oopsArray` is currently `undefined`. Using a
 
 
 var oopsArray = [ 'turn' , , 'down' , , 'for' , , 'what' ];
+
+
 for(var i = 0; i<oopsArray.length; i++){
   console.log(oopsArray[i]);
   if(i%2 ===1){
@@ -151,6 +154,8 @@ nope
 turn
 */
 
+var oopsArray = [ 'turn' , , 'down' , , 'for' , , 'what' ];
+
 for(var i = oopsArray.length - 1; i>=0; i--){
   console.log(oopsArray[i]);
 }
@@ -169,6 +174,12 @@ Next, write a function named `nap`. This function takes in a single parameter: `
 
 Inside of this function write a for-loop that will iterate through the `napSchedule` array and console.log the message: `ZzZzZzZz` if the schedule is `true`, otherwise the it will console.log the message: `Gotta get coding!` if the schedule is `false`.
 */
+
+var napSchedule = [ false, false, true, false,true, true];
+
+function nap(schedule){
+
+}
 
 
 
